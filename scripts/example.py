@@ -27,11 +27,12 @@ from scripts.scene_pipeline import load_scene_ckpt, save_scene_ckpt
 
 
 DATA_NAME = "Barboursville"
-DATA_DIR = os.path.join(_REPO_ROOT, f"data/{DATA_NAME}/partial")
+SET_NAME = "partial"
+DATA_DIR = os.path.join(_REPO_ROOT, f"data/{DATA_NAME}/{SET_NAME}")
 JSON_PATH = os.path.join(DATA_DIR, "transforms.json")
 EVAL_JSON = os.path.join(DATA_DIR, "eval.json")
 OUT_DIR = os.path.join(_REPO_ROOT, "outputs")
-MODEL_PATH = os.path.join(OUT_DIR, f"{DATA_NAME}.pth")
+MODEL_PATH = os.path.join(OUT_DIR, f"{DATA_NAME}_{SET_NAME}.pth")
 RGB_GIF = os.path.join(OUT_DIR, "rgb_pred.gif")
 UQ_GIF = os.path.join(OUT_DIR, "uq.gif")
 

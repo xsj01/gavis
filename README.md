@@ -39,6 +39,7 @@ pip install zmq
 python -m pip install numpy numpy-quaternion
 pip install nerfacc
 pip install einops
+pip install gdown  # for downloading datasets (scripts/download_data.sh)
 
 # for image generation
 sudo snap install blender --classic
