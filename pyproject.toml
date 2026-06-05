@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gavis"
+version = "0.1.0"
+description = "Visibility-guided uncertainty quantification for 3D Gaussian Splatting"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "torch",
+    "omegaconf",
+    "plyfile",
+    "scipy",
+    "matplotlib",
+    "imageio",
+    "pillow",
+    # CUDA rasterizers (must be installed separately, e.g. from develop/submodules):
+    #   diff_gaussian_rasterization
+    #   gavis_rasterizer
+    #   simple_knn
+    #   nerfacc
+]
+
+[tool.setuptools.packages.find]
+include = ["gavis*"]
+
+[tool.setuptools.package-data]
+gavis = ["configs/*.yaml", "backend/sh/constants/*.pt"]

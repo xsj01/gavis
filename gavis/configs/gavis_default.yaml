@@ -1,0 +1,41 @@
+# Default GAVIS config — algorithm parameters only.
+# H, W, fovx, fovy, and aabb must be supplied by the user.
+
+H: ???
+W: ???
+fovx: ???
+fovy: ???
+aabb: ???
+device: cuda
+bg_color: [0.0, 0.0, 0.0]
+
+vis:
+  mode: sh
+  kappa: 1.0
+  grid: True
+  fixed_gaussian: True
+  fixed_gaussian_surface: False
+  fixed_gaussian_kappa: 0.0
+  fixed_gaussian_use_angular_vis: True
+  num_fixed_gaussians: 165000
+  background_density: 1000.0
+  background_scale: 0.005
+  learned_num_theta: 5
+  learned_num_phi: 10
+  bg_num_theta: 5
+  bg_num_phi: 10
+  disable_visibility: False
+  virtual_gaussians_seed: 1
+  sh:
+    sh_degree: 2
+    method: amgm
+    use_flatten_sh: True
+
+bn:
+  beta: 0.5
+  alpha0: 0.15
+  d0: 1.0
+  Q0: 1.0
+  Qbg: 0.01
+
+var_mode: none
