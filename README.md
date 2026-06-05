@@ -45,7 +45,11 @@ pip install gdown  # for downloading datasets (scripts/download_data.sh)
 sudo snap install blender --classic
 ```
 
-## Dataset instructions
+## Dataset download
+
+```
+bash scripts/download_data.sh
+```
 
 ## Dev instructions for the rasterizer
 
