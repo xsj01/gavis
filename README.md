@@ -19,7 +19,7 @@ conda install -y -c "nvidia/label/cuda-11.7.1" cuda-toolkit
 
 python -m pip install --no-build-isolation git+https://github.com/YixunLiang/simple-knn.git
 python -m pip install --no-build-isolation submodules/vanilla_3dgs_rasterizer
-python -m pip install --no-build-isolation git+https://https://github.com/xsj01/gavis_rasterizer.git
+python -m pip install --no-build-isolation git+https://github.com/xsj01/gavis_rasterizer.git
 
 conda install tqdm
 pip install bpy==3.6.0 --extra-index-url https://download.blender.org/pypi/
