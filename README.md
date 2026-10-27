@@ -4,12 +4,13 @@ CVPR 2026
 
 ### [Website](https://gatech-rl2.github.io/GAVIS/) | [Paper](https://arxiv.org/abs/2605.30342)
 
-[Shangjie Xue](https://xsj01.github.io/), [Jesse Dill](https://www.linkedin.com/in/jesse-n-dill/), [Dhruv Ahuja](https://www.linkedin.com/in/dhruvahuja8/), [Frank Dellaert](https://dellaert.github.io/), [Panagiotis Tsiotras](https://ae.gatech.edu/directory/person/panagiotis-tsiotras), [Danfei Xu](https://faculty.cc.gatech.edu/~danfei/)
+[Shangjie Xue](https://xsj01.github.io/), [Jesse Dill](https://www.linkedin.com/in/jesse-n-dill/), [Dhruv Ahuja](https://dahuja8.github.io/), [Frank Dellaert](https://dellaert.github.io/), [Panagiotis Tsiotras](https://ae.gatech.edu/directory/person/panagiotis-tsiotras), [Danfei Xu](https://faculty.cc.gatech.edu/~danfei/)
 
 
 ## Install instructions
 ```bash
 conda create -y -n gavis python=3.10
+conda activate gavis
 python -m pip install --upgrade pip
 pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
 
